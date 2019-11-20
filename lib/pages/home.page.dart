@@ -9,7 +9,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Container(
         padding: EdgeInsets.all(15),
-        color: Color(0xFFF5F5F5),
         width: double.infinity,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -23,7 +22,7 @@ class HomePage extends StatelessWidget {
             ),
             Text(
               "Categorias",
-              style: TextStyle(fontSize: 30),
+              style: Theme.of(context).textTheme.headline,
             ),
             SizedBox(
               height: 10,
