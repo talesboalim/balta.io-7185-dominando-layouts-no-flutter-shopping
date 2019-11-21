@@ -19,7 +19,7 @@ class LoginPage extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Container(
-                height: 430,
+                height: 370,
                 decoration: BoxDecoration(
                   boxShadow: [
                     new BoxShadow(
@@ -47,7 +47,7 @@ class LoginPage extends StatelessWidget {
                               children: <Widget>[
                                 Text(
                                   "Bem vindo",
-                                  style: Theme.of(context).textTheme.display2,
+                                  style: Theme.of(context).textTheme.display1,
                                 ),
                                 Text(
                                   "Cadastrar-se para continuar",
@@ -174,7 +174,10 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(top: 15, bottom: 15),
+                padding: EdgeInsets.only(
+                  top: 15,
+                  bottom: 15,
+                ),
                 child: Text(
                   "- ou -",
                   style: TextStyle(

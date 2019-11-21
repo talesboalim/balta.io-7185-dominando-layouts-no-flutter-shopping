@@ -19,7 +19,7 @@ class ProductItem extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(10),
       margin: EdgeInsets.all(5),
-      width: 170,
+      width: 150,
       color: Colors.black12,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -42,9 +42,9 @@ class ProductItem extends StatelessWidget {
               tag: image,
               child: Image.asset(
                 image,
-                width: 170,
-                height: 170,
-                fit: BoxFit.cover,
+                width: 130,
+                height: 130,
+                fit: BoxFit.fitWidth,
               ),
             ),
           ),
@@ -52,7 +52,7 @@ class ProductItem extends StatelessWidget {
             height: 5,
           ),
           Container(
-            height: 40,
+            height: 50,
             child: Text(
               title,
               style: TextStyle(
